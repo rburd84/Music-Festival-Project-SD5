@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Tillana:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/* General */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: Tillana;
+}
+
+:root {
+  --sand: #c2b280;
+  --dun: #dac8ae;
+  --crayola-blue: #0051d1;
+  --french-gray: #a4a5a9;
+  --rojo: #e60026;
+  --persian-orange: #d99058;
+  --tigers-eye: #b56917;
+  --battleship-gray: #848482;
+  --outer-space: #252d2f;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Nav Styles */
+header {
+  text-align: center;
+  background: var(--sand);
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+}
+nav {
+}
+
+/************    Main Hero Section styles    ************/
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.title {
+  font-size: 15vw;
+  color: #fff;
+}
+
+.red-eye:hover {
+  color: var(--sand);
+  transition: all 10ms ease-in-out;
+}
+
+#artist {
+}
+
+.artists-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+  min-width: 400px;
+}
+
+.artist-lineup {
+  flex-basis: 30%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.date {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.artist-headliners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist {
+  color: var(--sand);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: Tillana;
+}
+
+.artist-headliners > .artist:hover {
+  color: red;
+}
+
+.star {
+  margin: 0 1rem;
+  font-size: 300%;
+  color: var(--dun);
+  vertical-align: middle;
+}
+
+.artist-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-group-line {
+  display: flex;
+  min-width: max-content;
+}
+
+.artist-group-line > p {
+  font-family: Tillana;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--dun);
+}
+
+.artist-group-line > p:hover {
+  color: red;
+}
+
+.diamond {
+  margin: 0 0.5rem;
+}
+/**************   Ticket Section styles    ***************/
+
+#tickets {
+  padding: 2.5rem 2rem;
+  background: var(--dun);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#tickets > h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-block-end: 1.5rem;
+}
+
+.ticket-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.ticket-container > article {
+  text-align: center;
+  min-width: 275px;
+  flex-shrink: 1;
+}
+
+.ticket-container article > p {
+  margin-block-start: 0.75rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.ticket-card {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.ticket-card:hover {
+  filter: drop-shadow(5px 5px 10px #000);
+}
+
+.pack {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+.fee-link {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ga {
+  background: var(--crayola-blue);
+}
+
+.vip {
+  background: var(--sand);
+}
+
+.platinum {
+  background: var(--french-gray);
+}
+
+button {
+  padding: 0.55rem 1.5rem;
+  background: red;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border: 3px solid #000;
+  margin-block: 0.75rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: darkred;
+  transition: 100ms all ease-in-out;
+  transform: scale(1.02);
+  color: #d3d3d3;
+  border: 3.5px solid #000;
+}
+
+/*************    Sign Up Section styles   *************/
+
+#sign-up {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  flex-basis: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  text-align: center;
+  background: var(--outer-space);
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 15px solid #000;
+  border-bottom: 0;
+  color: #fff;
+}
+
+.contact > h3 {
+  color: var(--sand);
+  font-size: 2.5vw;
+  text-transform: uppercase;
+}
+
+.contact > p {
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  margin-block-start: 1rem;
+  gap: 15px 10px;
+}
+
+input {
+  padding: 2%;
+  background: var(--dun);
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+input[type="email"] {
+  flex-basis: 100%;
+  flex-shrink: 1;
+}
+
+/* Footer Section styles */
+
+footer {
+  background: var(--dun);
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Responsive Section */
+@media (max-width: 900px) {
+  #tickets > h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact > h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .image,
+  .contact {
+    flex-basis: 100%;
+  }
+
+  #tickets > h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact > h3 {
+    font-size: 5vw;
+  }
+
+  input {
+    background: var(--dun);
+    border-radius: 4px;
+  }
+
+  form {
+    gap: 5px;
+  }
+}
+
+.title {
+  animation: 3s ease-in-out fadeIn;
+}
+
+.letter-N {
+  animation: 3s ease-in-out dropIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropIn {
+  from {
+    transform: translatey(-100%);
+  }
+  to {
+    transform: translatey(0%);
+  }
+}
